@@ -2,28 +2,13 @@ body{
     font-family:"Raleway", sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    #cabecera{
-        display: grid;
-        grid-template-areas: "logo redesCabecera";
-        grid-template-columns: 20fr 1fr;
-        grid-template-rows: 1fr;
-        margin-bottom: 15px;
-    }
+    
     #logo{
-        grid-area: logo;
-        justify-self: center;   
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;   
     }
-    #redesCabecera{
-        grid-area: redesCabecera;
-        justify-self: end;
-    }
-    .listaRedes{
-        list-style: none;
-    }
-    .tamañoIconosRedes{
-        height: 40px;
-        width: 40px;
-    }
+    
     .barraDeNavegacion{
         background-image: linear-gradient(to left, #de2c62,  #1dedfd);
     }
@@ -89,6 +74,14 @@ body{
     .footer{
         border-top: 1px solid   crimson;
         margin-top: 15px;
+        padding: 10px;
+    }
+    .listaRedes{
+        list-style: none;
+    }
+    .tamañoIconosRedes{
+        height: 40px;
+        width: 40px;
     }
     /* PRODUCTOS*/
 
@@ -131,8 +124,8 @@ body{
         font-size:30px;
     }
     .tamañoImagenServicios{
-        width: auto;
-        height: auto;
+        width: 90%;
+        height: 25%;
         margin-bottom: 40px;
     }
     .divImagenesServicios{

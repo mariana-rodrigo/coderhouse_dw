@@ -10,23 +10,10 @@ body {
   /*GALERIA*/
   /*CONTACTO*/
   /*RESPONSIVE*/ }
-  body #cabecera {
-    display: grid;
-    grid-template-areas: "logo redesCabecera";
-    grid-template-columns: 20fr 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 15px; }
   body #logo {
-    grid-area: logo;
-    justify-self: center; }
-  body #redesCabecera {
-    grid-area: redesCabecera;
-    justify-self: end; }
-  body .listaRedes {
-    list-style: none; }
-  body .tamañoIconosRedes {
-    height: 40px;
-    width: 40px; }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; }
   body .barraDeNavegacion {
     background-image: linear-gradient(to left, #de2c62, #1dedfd); }
   body .nav-link {
@@ -71,7 +58,13 @@ body {
     display: inline; }
   body .footer {
     border-top: 1px solid   crimson;
-    margin-top: 15px; }
+    margin-top: 15px;
+    padding: 10px; }
+  body .listaRedes {
+    list-style: none; }
+  body .tamañoIconosRedes {
+    height: 40px;
+    width: 40px; }
   body .tablaProductos {
     margin-top: 60px;
     margin-bottom: 30px; }
@@ -101,6 +94,7 @@ body {
     font-size: 30px; }
   body .tamañoImagenServicios {
     width: 90%;
+    height: 25%;
     margin-bottom: 40px; }
   body .divImagenesServicios {
     display: flex;
