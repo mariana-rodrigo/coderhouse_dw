@@ -44,32 +44,15 @@ body{
     }
     #videoTexto{
         display: grid;
-        grid-template-areas: 
-            "video tituloTexto";
         grid-template-columns: 1fr 1fr;
     }
-    #video{
-        grid-area: video;
-        width: 100%;
-        height: 75%;
-    }
-
     .interlineadoDoble{
         line-height: 200%;
     }
     /*PIE*/
     #pie{
         display:grid;
-        grid-template-areas: "contacto redesPie";
         grid-template-columns: 30fr 2fr;
-        grid-template-rows: fr;
-    }
-    #contacto{
-        grid-area: contacto;
-    }
-    #redesPie{
-        grid-area: redesPie;
-        display: inline;
     }
     .footer{
         border-top: 1px solid   crimson;
@@ -238,6 +221,10 @@ body{
         }
         #videoTexto{
             display: block;
+        }
+        #tamañovideo{
+            width: 100%;
+            height: 100%;
         }
     }
     @media only screen and (max-width:1300px){

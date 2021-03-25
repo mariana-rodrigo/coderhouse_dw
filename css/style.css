@@ -38,24 +38,12 @@ body {
     margin: 20px; }
   body #videoTexto {
     display: grid;
-    grid-template-areas: "video tituloTexto";
     grid-template-columns: 1fr 1fr; }
-  body #video {
-    grid-area: video;
-    width: 100%;
-    height: 75%; }
   body .interlineadoDoble {
     line-height: 200%; }
   body #pie {
     display: grid;
-    grid-template-areas: "contacto redesPie";
-    grid-template-columns: 30fr 2fr;
-    grid-template-rows: fr; }
-  body #contacto {
-    grid-area: contacto; }
-  body #redesPie {
-    grid-area: redesPie;
-    display: inline; }
+    grid-template-columns: 30fr 2fr; }
   body .footer {
     border-top: 1px solid   crimson;
     margin-top: 15px;
@@ -162,7 +150,10 @@ body {
     body ul li:hover ul {
       display: block; }
     body #videoTexto {
-      display: block; } }
+      display: block; }
+    body #tamañovideo {
+      width: 100%;
+      height: 100%; } }
   @media only screen and (max-width: 1300px) {
     body #tablaGaleria {
       display: flex;
