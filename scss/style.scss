@@ -1,3 +1,4 @@
+@import "variables";
 body{
     font-family:"Raleway", sans-serif;
     padding-left: 20px;
@@ -12,6 +13,7 @@ body{
     .barraDeNavegacion{
         background-image: linear-gradient(to left, #de2c62,  #1dedfd);
     }
+    
     .nav-link{
         color: rgb(249, 250, 252)!important;
     }
@@ -32,23 +34,24 @@ body{
         display: inline;
     }
     .portada{
-        width: 100%;
-        height:75%;
-        margin-top: 10px;
+        width: $ancho-a-full;
+        height: 75%;
+        
     }
     .divPortada{
         display: grid;
         justify-content: center;
-        margin: 20px;
-
+        margin: 20px 0px;
     }
     #videoTexto{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        
     }
     .interlineadoDoble{
         line-height: 200%;
     }
+    
     /*PIE*/
     #pie{
         display:grid;
@@ -71,6 +74,8 @@ body{
     .tablaProductos{
         margin-top: 60px;
         margin-bottom: 30px;
+        overflow-x: auto;
+        width: $ancho-a-full;
     }
     .tamañoLetraXL{
         font-size: x-large;
@@ -79,7 +84,7 @@ body{
     .letraEnNegrita{
         font-weight: bolder;
     } 
-    .fondoCeleste{
+    .tabla__fondoCeleste{
         background-color: rgb(107, 200, 243);
     }
     .textoCentrado{
@@ -88,15 +93,15 @@ body{
     .tamañoLetraL{
         font-size: large;
     }
-    .fondoRosa{
+    .tabla__fondoRosa{
         background-color:rgb(255, 80, 124);
     }
-    .estiloLista{
+    .tabla__estiloLista{
         list-style-image: url(https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/1f370.png);
     }
     /* SERVICIOS*/
     h1{
-        color: rgb(204, 50, 109);
+        color: $titulo;
         margin-top: 20px;
         text-align: center;
         font-size: xx-large;
@@ -130,6 +135,7 @@ body{
         "torta5 torta6";
         grid-template-columns: 50% 50%;
         grid-row-gap: 10px;
+        
 
     }
     #mesaDulce{
@@ -182,23 +188,41 @@ body{
         height: 400px;
     }
     #tablaGaleria img:hover{
-        width: 100%;
+        width: $ancho-a-full;
         height: auto;
+        transition: 500ms linear;
     }
 
     /*CONTACTO*/
+    .contacto{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tituloContacto{
+        width: $ancho-a-full;
+    }
+    .form{
+        border: 2px solid crimson;
+        padding: 10px;
+        width: 60%;
+    }
+    .ingresarTexto{
+        width: $ancho-a-full;
+    }
     .divEspaciado{
         margin-top: 20px;
+        padding: 10px;
     }
     #mensaje{
-        width: 50%;
+        width: $ancho-a-full;
     }
     input:focus{
         width: 200px;
         height: 50px;
     }
     /*RESPONSIVE*/
-    @media only screen and (max-width:600px){
+    @media only screen and (max-width:530px){
         .listaNav{
             display:block;
             list-style: none;
@@ -235,12 +259,9 @@ body{
         }
         
         .tamañoImagenGaleria{
-            width: 100%;
+            width: $ancho-a-full;
             height: 100%;
         }
 
-        #mensaje{
-            width: 100%;
-        }
     }
 }
