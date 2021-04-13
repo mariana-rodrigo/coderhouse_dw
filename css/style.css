@@ -44,7 +44,7 @@ body {
     display: grid;
     grid-template-columns: 30fr 2fr; }
   body .footer {
-    border-top: 1px solid   crimson;
+    border-top: 1px solid crimson;
     margin-top: 15px;
     padding: 10px; }
   body .listaRedes {
@@ -63,24 +63,25 @@ body {
   body .letraEnNegrita {
     font-weight: bolder; }
   body .tabla__fondoCeleste {
-    background-color: #6bc8f3; }
+    background-color: #1dedfd; }
   body .textoCentrado {
     text-align: center; }
   body .tamañoLetraL {
     font-size: large; }
   body .tabla__fondoRosa {
-    background-color: #ff507c; }
+    background-color: #de2c62; }
   body .tabla__estiloLista {
     list-style-image: url(https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/1f370.png); }
   body h1 {
-    color: #cc326d;
+    color: #de2c62;
     margin-top: 20px;
     text-align: center;
     font-size: xx-large; }
   body h2 {
     font-style: italic;
-    color: #048cad;
-    font-size: 30px; }
+    color: #1dedfd;
+    font-size: 30px;
+    font-weight: bold; }
   body .tamañoImagenServicios {
     width: 90%;
     height: 25%;
@@ -170,7 +171,7 @@ body {
       width: 100%;
       height: 100%; }
     body .form {
-      width: 90%; } }
+      width: 100%; } }
   @media only screen and (max-width: 1300px) {
     body #tablaGaleria {
       display: flex;
